@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.grwal.memoing"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.grwal.memoing"
         minSdk = 30
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
