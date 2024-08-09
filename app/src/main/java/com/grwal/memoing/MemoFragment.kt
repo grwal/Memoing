@@ -11,7 +11,6 @@ class MemoFragment: TemplateFragment<FragmentMemoBinding, MemoViewModel>() {
     override val viewModel: MemoViewModel by viewModels()
     override val layoutId: Int
         get() = R.layout.fragment_memo
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }

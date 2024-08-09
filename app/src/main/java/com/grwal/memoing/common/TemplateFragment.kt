@@ -3,6 +3,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.coroutineScope
@@ -23,6 +24,9 @@ abstract class TemplateFragment<T : ViewDataBinding, VM : TemplateViewModel> : B
     var parentView: View? = null
         private set
     private var lastTimeNavigated = 0L
+
+    @get:LayoutRes
+    abstract override val layoutId: Int
 
     override fun onCreateView(
         inflater: LayoutInflater,
